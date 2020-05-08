@@ -1,0 +1,30 @@
+a[href^="mailto:"] {
+  &::before {
+    content: '✉ ';
+  }
+}
+
+a[href^="tel:"] {
+  &::before {
+    content: '✆ ';
+  }
+}
+
+a[href^="https://"] {
+  &::before {
+    content: '✈ ';
+  }
+}
+
+a[href$=".pdf"], a[href$=".mp3"], a[href$=".zip"]  {
+  &::before {
+    content: '★ ';
+  }
+}
+
+a {
+  color: $light-green;
+  footer & {
+    color: black;
+  }
+}

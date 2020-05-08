@@ -1,0 +1,7 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 3em;
+    }
+}
